@@ -1,11 +1,17 @@
-import React, { Component } from 'react'
+import React, { Component } from 'react';
+import Data from './Tasks/Task1/Data';
+import Header from './Tasks/Task1/Header';
+import './Tasks/Task1/main.css';
 
  class App extends Component {
   render() {
     return (
-      <div>
-        <h1>hello I am {this.props.children}</h1>
+      <>
+      <div className="app">
+        <Header />
+        <Data />
       </div>
+      </>
     )
   }
 }

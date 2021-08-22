@@ -5,7 +5,7 @@ import './main.css';
 
 
 
-export default function Data() {
+ const Data = () => {
     const obj =[
         {
             "id": "1",
@@ -60,4 +60,4 @@ export default function Data() {
         </div>
     )
 }
-
+export default  Data;

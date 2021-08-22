@@ -5,9 +5,10 @@ import App from './App';
 
 
 ReactDOM.render(
+  <>
 
-    <App>Husna</App>
-  ,
+    <App />
+  </>,
   document.getElementById('root')
 );
 

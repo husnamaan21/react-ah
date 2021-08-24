@@ -1,0 +1,12 @@
+.logo{
+    width:90px;
+    height : 60px;
+}
+.background{
+    text-align: center;
+    text-transform: uppercase;
+    background-color: grey;
+    color: white;
+    margin-top: 0px;
+    padding:10px 0px !important;
+}

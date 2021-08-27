@@ -1,6 +1,6 @@
 import React from 'react';
 import Header from './Header';
-import {Parent} from './/Parent';
+import Data from './Data';
 
 function Display() {
     return (

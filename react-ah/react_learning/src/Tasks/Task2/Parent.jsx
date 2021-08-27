@@ -4,9 +4,9 @@ import Cards from './Cards';
 
 
 
+
 export const Parent = () => {
-    console.log(obj)
-    console.log(obj[0].price)
+   
     return (
         <div style={{"display":"flex","justifyContent":"space-evenly", "flex-wrap":"wrap"}}>
             {obj.map((i,index)=>
@@ -27,4 +27,5 @@ export const Parent = () => {
             
         </div>
     )
+   
 }

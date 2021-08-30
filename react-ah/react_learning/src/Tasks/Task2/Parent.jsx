@@ -11,7 +11,7 @@ export const Parent = () => {
         <div style={{"display":"flex","justifyContent":"space-evenly", "flex-wrap":"wrap"}}>
             {obj.map((i,index)=>
                 <div key={index}>
-                    <Cards  img={i.src} title={i.title} price={i.price} desingner={i.content}  />
+                    <Cards  img={i.src} title={i.title} price={i.price} desingner={i.content} ele={<h1>hello</h1>} />
                    
                 </div>
             )}

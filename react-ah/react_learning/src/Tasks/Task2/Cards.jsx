@@ -76,6 +76,7 @@ function Cards(props) {
         title= {
         <Typography className={classes.text}  variant="h6" color="textSecondary"  >
         {props.title}
+        {props.ele}
        </Typography>
        }
         subheader="NIKE "
@@ -116,6 +117,7 @@ function Cards(props) {
 Cards.propTypes={
   price : PropTypes.string,
   title:PropTypes.string,
+  ele:PropTypes.element,
   author:PropTypes.string.isRequired
 };
 

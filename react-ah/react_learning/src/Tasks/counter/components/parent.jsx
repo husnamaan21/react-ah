@@ -6,6 +6,7 @@ function Parent() {
     const [flag, setflag] = useState(true)
     const [add, setadd] = useState(0)
     const [color, setColor] = useState(true)
+    const [value,setValue]=useState("unlock")
     let changeColor = (color ? 'main' : 'main2')
 
     function subtraction() {
@@ -17,6 +18,11 @@ function Parent() {
     }
     function lock() {
         setflag(false)
+        setValue("lock")
+    }
+    function unlock() {
+        setflag(!flag)
+        setValue("unlock")
     }
     function changeTheme() {
         flag && setColor(!color)
@@ -40,7 +46,7 @@ function Parent() {
 
                 </div>
                 <div className="btnz">
-                    <button style={{borderRadius:"13px"}} onClick={lock} onDoubleClick={() => { setflag(true) }}>Lock</button>
+                    <button style={{borderRadius:"13px"}} onClick={lock} onDoubleClick={unlock}>{value}</button>
                     <button style={{borderRadius:"13px"}} onClick={changeTheme}>Change Theme</button>
                 </div>
 

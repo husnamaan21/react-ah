@@ -6,11 +6,13 @@ function Parent() {
     const [flag, setflag] = useState(true)
     const [add, setadd] = useState(0)
     const [color, setColor] = useState(true)
-    const [value,setValue]=useState("unlock")
+    // const [value,setValue]=useState("unlock")
     let changeColor = (color ? 'main' : 'main2')
+    const value = (flag? 'unlock':'lock')
 
     function subtraction() {
-        flag && setadd(add - 1)
+        flag && setadd(add - 1) 
+      
         if(add == 0){
             setadd(0)
             alert("value already 0")
@@ -18,11 +20,11 @@ function Parent() {
     }
     function lock() {
         setflag(false)
-        setValue("lock")
+      
     }
     function unlock() {
         setflag(!flag)
-        setValue("unlock")
+      
     }
     function changeTheme() {
         flag && setColor(!color)
@@ -35,7 +37,7 @@ function Parent() {
             <div className={changeColor}>
                 <Child add={add} />
                 <div className="reset">
-                    <button className="reset" onClick={() => { flag && setadd("") }}>Reset</button>
+                    <button className="reset" onClick={() => { flag && setadd(0) }}>Reset</button>
                 </div>
                 <div className="btns">
 

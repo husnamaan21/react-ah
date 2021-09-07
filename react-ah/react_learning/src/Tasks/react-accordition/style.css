@@ -10,10 +10,6 @@
     margin :1% auto 0px auto ;
     width: 60%;
     height: 2%;
-    border-top-left-radius: 13px;
-    border-top-right-radius: 13px;
-    border-bottom-left-radius: 13px;
-    border-bottom-right-radius: 13px; 
     background-color: rgb(220, 233, 232);
     display: flex;
     justify-content: space-between;
@@ -25,8 +21,6 @@
      margin :1% auto 0px auto ;
     width: 60%;
     height: 2%;
-    border-top-left-radius: 13px;
-    border-top-right-radius: 13px;
     background-color: rgb(220, 233, 232);
     display: flex;
     justify-content: space-between;
@@ -52,17 +46,12 @@
 
     margin :0px auto 0px auto ;
     width: 60%;
-    /* border-top :none !important;
-    border : 2px solid skyblue;*/
-    border-bottom-left-radius: 13px;
-    border-bottom-right-radius: 13px; 
     background-color: rgb(220, 233, 232);
 
 }
 .content p{
     padding: 7px 15px;
-  
-    color: white ;
+    color:  rgb(20, 145, 194) ;
   
 }
 span{

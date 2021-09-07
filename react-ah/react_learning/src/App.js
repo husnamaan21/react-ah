@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
-import Data from './Tasks/Task1/Data';
-import Header from './Tasks/Task1/Header';
-import './Tasks/Task1/main.css';
+import Menu from './Tasks/react-menu/menu';
+import Header from './Tasks/react-menu/header';
+import './Tasks/react-menu/style.css';
+
 import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
 
  class App extends Component {
@@ -9,8 +10,8 @@ import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
     return (
       <>
       <div className="app">
-        <Header />
-        <Data />
+          <Header />
+          <Menu />
       </div>
       </>
     )

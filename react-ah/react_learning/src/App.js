@@ -1,6 +1,11 @@
 import React, { Component } from 'react';
 import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
-import Accordion from './Tasks/react-accordition/accordion';
+import Accordions from './Tasks/bootstrap/Accordion';
+import ControlledCarousel from './Tasks/bootstrap/Carosal';
+// import Crumbs from './Tasks/bootstrap/breadcrumbs';
+// import Drop from './Tasks/bootstrap/dropdown';
+import Example from './Tasks/bootstrap/Toast1';
+import Forms from './Tasks/bootstrap/form';
 
  class App extends Component {
   render() {
@@ -8,8 +13,14 @@ import Accordion from './Tasks/react-accordition/accordion';
     return (
       <>
       <div className="app">
-        <Accordion />
       
+      {/* <Crumbs />
+      <Drop />
+      <Example /> */}
+      <Forms />
+      {/* <Accordions />
+      <ControlledCarousel /> */}
+      <Example />
        
       </div>
       </>

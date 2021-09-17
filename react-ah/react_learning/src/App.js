@@ -1,6 +1,9 @@
 import React, { Component } from 'react';
+import './Tasks/react-todo/style.css';
+
 import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
-import Accordion from './Tasks/react-accordition/accordion';
+import Todo from './Tasks/react-todo/todo'
+
 
  class App extends Component {
   render() {
@@ -8,7 +11,7 @@ import Accordion from './Tasks/react-accordition/accordion';
     return (
       <>
       <div className="app">
-        <Accordion />
+     <Todo />
       
        
       </div>

@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
-import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
-import Accordion from './Tasks/react-accordition/accordion';
+import Effect from './Tasks/tourism/effect';
+// import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
+
+import Tourism from './Tasks/tourism/tourism';
 
  class App extends Component {
   render() {
@@ -8,7 +10,10 @@ import Accordion from './Tasks/react-accordition/accordion';
     return (
       <>
       <div className="app">
-        <Accordion />
+  
+        <Tourism />
+        <Effect />
+
       
        
       </div>

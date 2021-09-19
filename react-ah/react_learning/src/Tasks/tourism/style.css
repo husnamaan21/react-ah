@@ -1,0 +1,36 @@
+.background{
+   
+    width:100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+    background-attachment: fixed;
+    
+    
+ 
+}
+
+
+
+body{
+     background-image: url('https://cdnb.artstation.com/p/assets/images/images/015/337/203/original/felix-hulteen-aniamted-gif-tiles-sand.gif?1547982777'); 
+    background-size: cover;
+    margin-top: 0%;
+   
+ 
+}
+.list{
+    display: flex;
+    justify-content: center;
+    margin-left:auto
+   
+  
+}
+.btns{
+    margin-top: 10%;
+    margin-left: 48%;
+    font-weight: 900 !important;
+    margin-bottom: 10%;
+}

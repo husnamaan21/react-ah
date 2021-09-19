@@ -18,7 +18,7 @@ export default function Todo() {
             settoggle(true)
 
         }
-        else if(data && !toggle){
+         if(data && !toggle){
             setitem( item.map((v)=>{
                 if(v.id === store){
                    return {...v,task:data}

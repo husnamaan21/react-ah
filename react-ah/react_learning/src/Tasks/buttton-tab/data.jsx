@@ -3,7 +3,7 @@ import axios from 'axios';
 import Button from './button';
 import Detail from './detail';
 import Loader from './loading';
-
+import './style.css';
 
 export default function Data() {
     const [data, setData] = useState([]);
@@ -41,6 +41,7 @@ export default function Data() {
             {!loading && <Loader />}
             <Button data={data} change={change} />
             {flag ? <Detail val={data} i={index} duty={duties} /> : null}
+       
 
 
 

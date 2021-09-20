@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
-import Accordion from './Tasks/react-accordition/accordion';
+import Data from './Tasks/buttton-tab/data';
+
 
  class App extends Component {
   render() {
@@ -8,7 +9,8 @@ import Accordion from './Tasks/react-accordition/accordion';
     return (
       <>
       <div className="app">
-        <Accordion />
+    
+        <Data />
       
        
       </div>

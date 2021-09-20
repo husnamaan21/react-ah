@@ -47,7 +47,7 @@ img: {
   color: 'white',
   width:10,
   },
-  avatar4: {
+  avatar: {
     backgroundColor: 'grey',
   },
   tick:{
@@ -64,7 +64,7 @@ function Cards(props) {
     <Card className={classes.root}  elevation={3}>
       <CardHeader
         avatar={
-          <Avatar  className={classes.avatar4} >
+          <Avatar  className={classes.avatar} >
                 <IconButton aria-label="tick" className={classes.tick}>
           <DoneAllSharpIcon />
            </IconButton>

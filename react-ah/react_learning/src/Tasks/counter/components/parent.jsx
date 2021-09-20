@@ -48,7 +48,7 @@ function Parent() {
 
                 </div>
                 <div className="btnz">
-                    <button style={{borderRadius:"13px"}} onClick={lock} onDoubleClick={unlock}>{value}</button>
+                    <button style={{borderRadius:"13px"}} onClick={setflag} onDoubleClick={unlock}>{value}</button>
                     <button style={{borderRadius:"13px"}} onClick={changeTheme}>Change Theme</button>
                 </div>
 

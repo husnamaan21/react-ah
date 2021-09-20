@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
-import { faChevronDown, faChevronUp } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faChevronDown, faChevronUp } from '@fortawesome/free-solid-svg-icons';
+
 import './style.css';
 import data from './data';
 

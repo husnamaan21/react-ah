@@ -1,0 +1,96 @@
+body{
+    background-image: url('https://desktop.github.com/images/star-bg.svg') ,linear-gradient(#191c20, #24292e 15%);
+    color: rgba(255,255,255,0.65);
+    background-repeat: repeat;
+    background-position: center 0, 0 0, 0 0;
+
+}
+.search{
+    display:flex;
+    justify-content: space-around;
+    /* margin-top: 1%; */
+}
+.bar{
+    width:94%;
+    margin-left: 1% !important;
+    border :none;
+    outline: none;
+    border-radius: 15px;
+    padding: 3px 8px;
+    margin-top: 10px;
+
+}
+.srch-btn{
+    margin-right: 1%;
+    border :none;
+    outline: none;
+    border-radius: 50%;
+  
+    font-weight: bold;
+    background-color: transparent;
+    color: white;
+    font-size: 25px ;
+}
+.logo-box{
+  display: flex;
+  justify-content: center;
+  margin-top: 3%;
+}
+
+.search {
+ 
+ 
+    border :none;
+    outline: none;
+    border-radius: 13px;
+    padding: 3px 8px;
+    margin-top: 20%;
+    margin-left: 7%;
+    width: 350px;
+    background-image: linear-gradient(to bottom, #8241f9, #4e277b);
+    border-color: #150a27;
+    color: #fff;
+  
+
+}
+.users{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 2%;
+}
+.usersCard{
+
+    border-top-color: #8241f9;
+    border-left-color: #8241f9;
+    border-right-color: #4e277b;
+    border-bottom-color: #4e277b;
+    margin-top: 1%;
+  
+}
+.usersCard h5{
+    color: #5b24a3;
+    text-transform: uppercase;
+}
+.links{
+    text-decoration: none;
+    color: #fff;
+
+}
+
+
+.btn{
+      background-image: linear-gradient(to bottom, #8241f9, #4e277b);
+     font-weight: 700;
+     text-transform: capitalize;
+
+   
+    border-radius: 0px;
+  
+}
+.line{
+    display: flex;
+    justify-content: center;
+  margin-top: 30px;
+
+}

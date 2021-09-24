@@ -1,7 +1,7 @@
 import React,{useState} from 'react'
 
 
-export default function Search({search,change,input}) {
+export default function Search({change,input}) {
     
     return (
         

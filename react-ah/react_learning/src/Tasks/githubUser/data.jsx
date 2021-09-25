@@ -22,12 +22,16 @@ export default function Data() {
         setloading(true)
 
     }
+  
     async function fetchingUser() {
 
         const res = await axios.get(`https://api.github.com/users/${user}`)
         setUserData(await res.data)
-        console.log("userdata", userData)
-        setloading(true)
+            setUserData(await res.data)
+            console.log("userdata", userData)
+            setloading(true)
+        
+      
 
     }
 
@@ -55,7 +59,7 @@ export default function Data() {
         }
     }
 
-    const searchItem = data.filter((i) => { return i.login.includes(input) })
+    const searchItem = data.filter((i) => { return i.login.toLowerCase().includes(input.toLowerCase()) })
     return (
 
 

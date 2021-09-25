@@ -12,6 +12,7 @@ export default function Data() {
     const [input, setInput] = useState("")
     const [userData, setUserData] = useState()
     const [user, setUser] = useState("")
+    const [flag,setflag]=useState(false)
 
     let url = "https://api.github.com/users"
     async function fetching() {
@@ -44,10 +45,14 @@ export default function Data() {
     function change(e) {
         setInput(e.target.value)
     }
-    function changeUser(val) {
+    function changeUser(e) {
 
-        setUser(val)
+        setUser(e.target.value)
         fetchingUser()
+        setflag(true)
+        if(e.target.value==""){
+            setflag(false)
+        }
     }
 
     const searchItem = data.filter((i) => { return i.login.includes(input) })
@@ -60,7 +65,7 @@ export default function Data() {
           
             {!loading && "loading" }
           
-            <SearchUser change={changeUser} />
+            <SearchUser change={changeUser} user={user} />
             <div className="logo-box">
             <img src={"https://desktop.github.com/images/desktop-icon.svg"} alt="logo" className="logo" />
             <Search change={change} input={input} />
@@ -68,7 +73,7 @@ export default function Data() {
            
           
 
-            {userData ? <UserCard data={userData} /> : <Cards data={searchItem} />}
+            {userData  && flag ? <UserCard data={userData} /> : <Cards data={searchItem} />}
 
 
         </div>

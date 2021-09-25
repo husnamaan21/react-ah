@@ -3,7 +3,10 @@ import { FaGithub } from 'react-icons/fa'
 
 export default function UserCard({ data }) {
     return (
+     
+    
         <div className="users">
+            
             <div className="card usersCard mb-3 usersCard" style={{ maxWidth: "430px" }}>
                 <div class="row g-0">
                     <div class="col-md-4">

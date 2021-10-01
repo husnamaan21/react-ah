@@ -1,7 +1,7 @@
 import React,{useState,useRef,useEffect} from 'react'
 
-export default function Child({val}) {
-    const [flag,setFlag]=useState(false)
+export default function Child({val,flag}) {
+    // const [flag,setFlag]=useState(false)
 
   
     let ref =useRef()
@@ -27,20 +27,17 @@ export default function Child({val}) {
         
     })
     
-    let chk= true
+    let chk=  ref.current
 
    
-  val ? chk = !chk:null 
+
   
 
     return (
      
         <div>
-            {  console.log("return and ref",ref.current)
-            }
-            {  console.log("return and prop",val)}
-               {/* {ref.current && setFlag(true)}
-               {flag  }  */}
+          
+          
             <table ref={tb} style={{ borderCollapse: "collapse",marginTop:"5%"}}>
                
                 <tr ref={tr} style={{border:"1px solid #dddddd" }}>
@@ -57,9 +54,9 @@ export default function Child({val}) {
                 </tr>
                 <tr ref={tr}>
             
-                 <td ref={td}>{ref.current || "no task is here"}</td>
+                 <td ref={td}>{ flag && !chk ? ref.current="here is no previos val" : chk }</td>
                 
-                 {console.log("refffff",chk)}
+             
            
                
                 <td ref={tr}>{val}</td>

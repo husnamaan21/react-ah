@@ -6,7 +6,7 @@ export default function Parent() {
 
     const [val, setVal] = useState()
     // const [disp,setDisp]=useState()
-    // const [flag,setflag]=useState(true)
+    const [flag,setflag]=useState(false)
     // useEffect(()=>{
     //     return ()=>setDisp("pre val")
     // })
@@ -17,12 +17,12 @@ export default function Parent() {
 
             <input type="text" ref={input} />
             <button onClick={() => {
-                // setflag(false)
+                setflag(true)
                 setVal(input.current.value)
                 input.current.value = ""
             }
             }>Add me</button>
-            <Child val={val} />
+            <Child val={val} flag={flag} />
         </div>
     )
 }

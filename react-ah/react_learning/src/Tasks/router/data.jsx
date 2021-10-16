@@ -2,24 +2,30 @@ export let men =[{
    
     img:"https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/i1-665455a5-45de-40fb-945f-c1852b82400d/react-infinity-run-flyknit-mens-running-shoe-zX42Nc.jpg",
     name:"Nike React Infinity Run Flyknit",
-    price:"160"
+    price:"160",
+    type:"running"
 
 },{
     img:"https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/i1-5cc7de3b-2afc-49c2-a1e4-0508997d09e6/react-miler-mens-running-shoe-DgF6nr.jpg",
     name:"Nike React Miler",
-    price:"134"
+    price:"134", 
+     type:"running"
+
 },{
     img:"https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/vhbwnkor8sxt8qtecgia/mercurial-vapor-13-elite-tech-craft-fg-firm-ground-soccer-cleat-l38JPj.jpg",
     name:"Nike Mercurial Vapor 13 Elite Tech Craft FG",
-    price:"45"
+    price:"45",
+    type:"formal"
 },{
     img:"https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/i1-a52a8aec-22dc-4982-961b-75c5f4c72805/mercurial-superfly-7-pro-mds-fg-firm-ground-soccer-cleat-mhcpdN.jpg",
     name:"Nike Mercurial Superfly 7 Pro MDS FG",
-    price:"123"
+    price:"123",
+    type:"running"
 },{
     img:"https://assets.reebok.com/images/h_840,f_auto,q_auto:sensitive,fl_lossy/7599294868804d78a1b1ab6f01718a5e_9366/Club_C_Revenge_Men's_Shoes_White_FV9877_01_standard.jpg",
     name:"Club C Revenge Mens",
-    price:"345"
+    price:"345",
+    type:"formal"
 }
 ]
  export const women=[{

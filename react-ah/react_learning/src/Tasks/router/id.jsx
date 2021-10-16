@@ -4,7 +4,6 @@ import { men } from './data';
 
 export default function Id() {
     const {category}=useParams()
-    console.log(useParams())
     const data = men;
     const card =  data.filter((i,v)=>i.name === category)
     console.log("card",card)

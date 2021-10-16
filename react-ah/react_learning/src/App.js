@@ -9,7 +9,8 @@ import Kids from './Tasks/router/Kids';
 import Home from './Tasks/router/Home';
 import Page from './Tasks/router/page';
 import Id from './Tasks/router/id';
-import {Disp} from './Tasks/router/Men'
+import Formal from './Tasks/router/formal';
+
 
  class App extends Component {
   render() {
@@ -21,14 +22,17 @@ import {Disp} from './Tasks/router/Men'
         <Nav />
        
         <Switch>
-        < Route path="/" exact component={Home} />
+        < Route path="/" exact component={Formal} />
         < Route path="/men" exact component={Men} />
         < Route path="/women" exact component={Women} />
         < Route path="/:category" exact component={Id} />
+        < Route path="/formal" exact component={Home} />
+        < Route path="/kids" exactcomponent={Kids}  >
+     
         < Route  path="*" component={Page} />
 
-        < Route path="/kids" exact ><Kids /></Route>
-        {/* <Route path="/:id" component={Disp} /> */}
+      </Route>
+     
         </Switch>
         </Router>
       

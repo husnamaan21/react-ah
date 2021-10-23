@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
-import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
-import Accordion from './Tasks/react-accordition/accordion';
+// import Box from './Tasks/box';
+import RedAlice from './Tasks/RedAlice';
+import './Tasks/style.css'
+
 
  class App extends Component {
   render() {
@@ -8,8 +10,9 @@ import Accordion from './Tasks/react-accordition/accordion';
     return (
       <>
       <div className="app">
-        <Accordion />
-      
+  
+      <RedAlice />
+      {/* <Box /> */}
        
       </div>
       </>
